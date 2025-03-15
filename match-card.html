@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Creator - The Island of Relevancy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/match-card.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>The Island of Relevancy - Match Creator</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="match-creator.html">Match Creator</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="bloodline-section">
+        <h2>🔥 The Bloodline Legacy</h2>
+        <div class="bloodline-container">
+            <div class="member left">
+                <img src="https://www.wwe.com/f/styles/talent_champion_m/public/all/2024/04/Roman_PROFILE--a693aaf95d89f652dd64e3f5deb115e9.png" alt="Roman Reigns">
+                <div class="info">
+                    <h3>Roman Reigns - The Tribal Chief</h3>
+                    <p>The leader of The Bloodline and Undisputed WWE Universal Champion.</p>
+                </div>
+            </div>
+            <div class="member left">
+                <div class="info">
+                    <h3>Jey Uso - Main Event Jey</h3>
+                    <p>One half of The Usos, known for his high-energy style and resilience.</p>
+                </div>
+                <img src="https://www.wwe.com/f/styles/talent_champion_m/public/all/2024/05/Jey-Uso_01292024RF_10011_Profile--02473cd8c088818b51e67ebf4a5f7949.png" alt="Jey Uso">
+            </div>
+            <div class="member left">
+                <img src="https://www.wwe.com/f/styles/talent_champion_m/public/all/2024/03/jimmy_uso_PROFILE--197929cb5dedeeccbed95cfb9ed27f44.png" alt="Jimmy Uso">
+                <div class="info">
+                    <h3>Jimmy Uso - The Enforcer</h3>
+                    <p>A tag team specialist with years of dominance in the WWE.</p>
+                </div>
+            </div>
+            <div class="member left">
+                <div class="info">
+                    <h3>Solo Sikoa - The Enforcer</h3>
+                    <p>The powerhouse of The Bloodline, known for his brutal style.</p>
+                </div>
+                <img src="https://www.wwe.com/f/styles/talent_champion_m/public/all/2024/06/SoloSikoa_01282024RF_3720_Profile--7203c3d3f57c02452a2db469cf68d1d2.png" alt="Solo Sikoa">
+            </div>
+            <div class="member left">
+                <img src="https://www.wwe.com/f/styles/talent_champion_m/public/all/2022/06/Sami_Zayn_Profile--4f993ee786bf3de7f75d3290db9d0aab.png" alt="Sami Zayn">
+                <div class="info">
+                    <h3>Sami Zayn - The Honorary Uce</h3>
+                    <p>The strategist of the group, played a vital role in The Bloodline's success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="match-container">
+        <h2>🔥 Create Your Dream Match</h2>
+        <form id="matchForm">
+            <div class="input-group">
+                <label for="wrestler1">Select Wrestler 1</label>
+                <select id="wrestler1">
+                    <option value="roman_reigns">Roman Reigns</option>
+                    <option value="john_cena">John Cena</option>
+                    <option value="seth_rollins">Seth Rollins</option>
+                    <option value="randy_orton">Randy Orton</option>
+                    <option value="brock_lesnar">Brock Lesnar</option>
+                    <option value="edge">Edge</option>
+                    <option value="triple_h">Triple H</option>
+                    <option value="the_rock">The Rock</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="wrestler2">Select Wrestler 2</label>
+                <select id="wrestler2">
+                    <option value="aj_styles">AJ Styles</option>
+                    <option value="drew_mcintyre">Drew McIntyre</option>
+                    <option value="bobby_lashley">Bobby Lashley</option>
+                    <option value="kofi_kingston">Kofi Kingston</option>
+                    <option value="gunther">Gunther</option>
+                    <option value="shinsuke_nakamura">Shinsuke Nakamura</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="matchType">Match Type</label>
+                <select id="matchType">
+                    <option value="singles">Singles Match</option>
+                    <option value="no_dq">No DQ Match</option>
+                    <option value="steel_cage">Steel Cage Match</option>
+                    <option value="hell_in_a_cell">Hell in a Cell</option>
+                    <option value="ladder_match">Ladder Match</option>
+                    <option value="last_man_standing">Last Man Standing</option>
+                </select>
+            </div>    <div id="predictionContainer" class="input-group">
+                <!-- Prediction options will be generated dynamically here -->
+            </div>
+            
+            <button type="submit" class="btn">Create Match</button>
+        </form>
+        <div id="matchResult" class="match-result"></div>
+    </section>
+    <script src="assets/js/match-card.js"></script>
+</body>
+</html>
